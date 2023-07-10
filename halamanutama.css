@@ -1,0 +1,23 @@
+body{
+    background-color: rgba(241, 169, 205, 0.686);
+}
+.header {
+    display:inline-block;
+    background-color: rgba(255, 105, 180, 0.259);
+    width:100%;
+    height: 75px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 15px;
+}
+.header img {
+    width: 250px;
+    height: 115px;
+}
+.list:hover {
+    color: rgba(0, 0, 0, 0.399);
+    font-size: 25px;
+}
+ul li a {
+    color: azure;
+}

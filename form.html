@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir</title>
+    <style>
+        input {
+            width: 100px;
+            height: 20px;
+            border-radius: 25px;
+            background-color: rgb(192, 196, 203);
+            border: none;
+        
+        }
+        button {
+            width: 100px;
+            height: 20px;
+            border-radius: 25px;
+            border-style: dashed;
+            background-color: rgb(186, 237, 168);  
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- contoh form : form login,form registrasi 
+    elemen form : input(berupa kolom),textarea(lebih banyak isinya,misal isi komentar),select(membuat combobox),button(tombol),label(menandai elemen input)-->
+    <h2>Mendaftar</h2>
+    <h4>Daftarkan Akunmu!</h4>
+    <form action="formulir.php" metdot="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" size="15" name="username">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" size="15">
+        <br>
+        <label>Jenis Kelamin</label>
+        <input type="radio" name="jeniskelamin" id="laki"><label for="laki">pria</label>
+        <input type="radio" name="jeniskelamin" id="perempuan"><label for="perempuan">wanita</label>
+        <br>
+        <label for="hoby">Hoby</label>
+        <input type="checkbox" id="Menyanyi" ><label for="Menyanyi">Menyanyi</label>
+        <input type="checkbox" id="Menggambar" ><label for="Menggambar">Menggambar</label>
+        <input type="checkbox" id="Menulis" ><label for="Menulis">Menulis</label>
+        <br>
+        <label for="jurusan">Jurusan</label>
+        <select name="jurusan" id="jurusan">
+            <option value="teknik informatika"> Teknik Informatika</option>
+            <option>Teknik Mesin</option>
+            <option>Keperawatan</option>
+        </select>
+        <br>
+        <textarea name="question" id="question" cols="30" rows="5"></textarea>
+        <br>
+        <button type="submit">Daftar</button>
+    </form>
+</body>
+</html>

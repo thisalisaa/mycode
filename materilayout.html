@@ -1,0 +1,96 @@
+<!-- 
+Layout merupakan teknik untuk meletakan dan mengatur letak elemen yang dibuat.
+hal yang perlu dipelajari : 
+1. html dasar
+2. css dasar
+tools yang disipakan:
+1. code editor (untuk menulis kode program)
+2. web browser (chrome)
+
+1. Display
+default display dari div adalah block,sedangkan pada span adalah inline.
+display itu mengatur perilaku pada kotak.
+value display : 
+1. inline 
+tidak menambah baris baru, tetap disambung ketika memang masih muat
+lebar dan tinggi menyesuaikan konten, dan tidak dapat diubah lebar dan tinggi nya
+hanya image yang ketika menggunakan display image ukuran dapat diubah. 
+2. inline block
+sama seperti inline, tapi bedanya inline block dapat kita atur lebar dan tingginya
+3. block
+menambah baris baru
+dapat mengatur lebar dan tingginya, jika tidak diatur maka akan memenuhi seluruh tempatnya
+4. none 
+menghilangkan sebuah elemen 
+
+2. Dimensi
+digunakan untuk mengatur lebar dan tinggi
+terdiri dari width(lebar) dan height(tinggi), bisa menggunakan satuan px,%
+
+3. Overflow
+mengatur konten yang keluar dari parentnya, misal ada div didalam div
+ada 4 value :
+1. visible (sudah default) tidak otomatis menambah
+2. auto , otomatis menambahkan 
+3. hidden, konten nya akan disembunyikan
+4. scroll, membutuhkan scroll, dan scroll nya tetap ada
+
+4. Box model
+setiap elemen dihalaman berada dalam disebuah box yang bisa kita atur ukuran,posisi,dan warna nya
+* mengatur semua elemen
+ada 4 elemen :
+1. margin, area transparan disekitar kotak,diluar border, bisa pake nilai negatif dan auto(untuk konten ditengah)
+2. padding, area tranpasaran didalam kotak,antara konten dan border, tidak dapat diberi nilai negatif dan auto,padding mempengaruhi ukuran box,bisa berubah ukuran box nya,padding untuk keseluruhan bisa tulis angka nya 1 aja
+3. border, batas disekeliling konten dan padding
+border: 5px solid black; artinya border : width, style,color
+style vorder ada 4 : 
+solid, berupa garis
+dotted, berupa titik-titik
+dashed,berupa garis putus2
+double,garis nya double
+bisa juga ditulis 1 ,1 
+border bisa dipilih,tidak semua. pake border left,dll
+border mengubah ukuran juga, jadi ukuran lebarnya bisa dikurangi dengan jumlah yang ada i inspect
+note : biasakan hanya mengatur lebar saja
+
+diperlukan box-sizing dengan value border-box agar lebar tetap yang ditentukan di awal meskipun ada padding dan border
+
+CSS reset
+secara default,elemen yang ada di html memiliki margin dan padding sendiri yang sudah ditentukan secara default,oleh karena itu kita perlu reset css.
+dengan cara :
+* body {
+margin : 0;
+padding :0;
+}
+
+4. content, isi konten itu sendiri,yang isinya gambar,text
+
+margin top, margin bottom,margin left,margin right,margin
+
+4. Float
+float merupakan properti untuk mengatur posisi elemen 
+value : left,right,none
+cara mengatasi teks wrapping :
+1.menambahkan overflow:auto;
+2.lear value nya ada left,right,both(jika keduanya,dengan menambh div kososng)
+
+5. Position
+mengubah/menggeser posisi elemen tanpa mempengaruhi elemen yang lain
+default posisition adalah static 
+selain menggunakan static maka bisa menggunakan properti top,left,right button
+static tidak ada yang berubah
+relativ maju satu dimensi keatas
+value nya, static,absolute,relative,fixed
+
+div dan span tidak memiliki arti apapun, gunanaya untuk mengelompokan tag yang dimiliki.
+dapat dikelompokan menjadi header, navigasi,main(konten utama),footer.
+span itu untuk teks,mengubah teks
+
+
+
+
+
+
+
+
+-->
